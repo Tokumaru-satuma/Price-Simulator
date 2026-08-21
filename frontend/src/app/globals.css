@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/themes/index.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--theme-color-background);
+  color: var(--theme-color-text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}

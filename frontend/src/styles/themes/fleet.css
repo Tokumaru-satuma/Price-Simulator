@@ -1,0 +1,73 @@
+/* fleet テーマの実値。コンポーネントから直接参照しない。 */
+
+/* 初期値および fleet / light の配色 */
+:root,
+html[data-theme="fleet"][data-mode="light"] {
+  color-scheme: light;
+
+  --theme-color-background: #f8fafc;
+  --theme-color-surface: #ffffff;
+  --theme-color-surface-muted: #f1f5f9;
+  --theme-color-text: #0f172a;
+  --theme-color-text-muted: #64748b;
+  --theme-color-border: #e2e8f0;
+
+  --theme-color-primary: #0f766e;
+  --theme-color-primary-hover: #115e59;
+  --theme-color-primary-foreground: #ffffff;
+
+  --theme-color-success: #15803d;
+  --theme-color-warning: #b45309;
+  --theme-color-danger: #b91c1c;
+  --theme-color-danger-hover: #991b1b;
+  --theme-color-danger-foreground: #ffffff;
+  --theme-color-info: #1d4ed8;
+}
+
+/* ユーザーがダークモードを明示選択した場合の fleet 配色 */
+html[data-theme="fleet"][data-mode="dark"] {
+  color-scheme: dark;
+
+  --theme-color-background: #0f172a;
+  --theme-color-surface: #1e293b;
+  --theme-color-surface-muted: #334155;
+  --theme-color-text: #f8fafc;
+  --theme-color-text-muted: #94a3b8;
+  --theme-color-border: #334155;
+
+  --theme-color-primary: #14b8a6;
+  --theme-color-primary-hover: #2dd4bf;
+  --theme-color-primary-foreground: #042f2e;
+
+  --theme-color-success: #4ade80;
+  --theme-color-warning: #fbbf24;
+  --theme-color-danger: #f87171;
+  --theme-color-danger-hover: #fca5a5;
+  --theme-color-danger-foreground: #450a0a;
+  --theme-color-info: #60a5fa;
+}
+
+/* system 選択時だけ、OS のダークモード設定へ追従する */
+@media (prefers-color-scheme: dark) {
+  html[data-theme="fleet"][data-mode="system"] {
+    color-scheme: dark;
+
+    --theme-color-background: #0f172a;
+    --theme-color-surface: #1e293b;
+    --theme-color-surface-muted: #334155;
+    --theme-color-text: #f8fafc;
+    --theme-color-text-muted: #94a3b8;
+    --theme-color-border: #334155;
+
+    --theme-color-primary: #14b8a6;
+    --theme-color-primary-hover: #2dd4bf;
+    --theme-color-primary-foreground: #042f2e;
+
+    --theme-color-success: #4ade80;
+    --theme-color-warning: #fbbf24;
+    --theme-color-danger: #f87171;
+    --theme-color-danger-hover: #fca5a5;
+    --theme-color-danger-foreground: #450a0a;
+    --theme-color-info: #60a5fa;
+  }
+}

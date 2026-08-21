@@ -1,0 +1,44 @@
+@theme inline {
+  /* Font */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Semantic colors */
+  --color-background: var(--theme-color-background);
+  --color-surface: var(--theme-color-surface);
+  --color-surface-muted: var(--theme-color-surface-muted);
+  --color-text: var(--theme-color-text);
+  --color-text-muted: var(--theme-color-text-muted);
+  --color-border: var(--theme-color-border);
+
+  --color-primary: var(--theme-color-primary);
+  --color-primary-hover: var(--theme-color-primary-hover);
+  --color-primary-foreground: var(--theme-color-primary-foreground);
+
+  --color-success: var(--theme-color-success);
+  --color-warning: var(--theme-color-warning);
+  --color-danger: var(--theme-color-danger);
+  --color-danger-hover: var(--theme-color-danger-hover);
+  --color-danger-foreground: var(--theme-color-danger-foreground);
+  --color-info: var(--theme-color-info);
+
+  /* Spacing */
+  --spacing-control-x: 0.875rem;
+  --spacing-control-y: 0.625rem;
+  --spacing-stack-xs: 0.5rem;
+  --spacing-stack-sm: 0.75rem;
+  --spacing-stack-md: 1rem;
+  --spacing-stack-lg: 1.5rem;
+  --spacing-stack-xl: 2rem;
+  --spacing-page: clamp(1rem, 3vw, 2rem);
+  --spacing-section: clamp(2rem, 5vw, 4rem);
+
+  /* Radius */
+  --radius-control: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-dialog: 1rem;
+
+  /* Shadow */
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow-dialog: 0 16px 40px rgb(15 23 42 / 0.18);
+}
