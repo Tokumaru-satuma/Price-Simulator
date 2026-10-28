@@ -10,11 +10,15 @@ venv/
 db.sqlite3
 /media/
 /static/
+/backend/.venv/
+/backend/.pgdata/
+backend/apps/simulator/migrations/
 
 # VSCode
 .vscode/
 
 documents/
+docs/project/local/
 
 # Next.js frontend
 /frontend/node_modules/
@@ -26,3 +30,5 @@ documents/
 /frontend/.vercel/
 /frontend/coverage/
 /frontend/*.tsbuildinfo
+
+docs/

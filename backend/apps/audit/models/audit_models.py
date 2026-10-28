@@ -114,10 +114,10 @@ class AuditLog(BaseModel):
         ordering = ["-created_at"]
 
         indexes = [
-            models.Index(fields=["level"]),
-            models.Index(fields=["action"]),
-            models.Index(fields=["created_at"]),
-            models.Index(fields=["user"]),
+            models.Index(fields=["level"], name="auditlog_level_idx"),
+            models.Index(fields=["action"], name="auditlog_action_idx"),
+            models.Index(fields=["created_at"], name="auditlog_created_at_idx"),
+            models.Index(fields=["user"], name="auditlog_user_idx"),
         ]
 
         verbose_name = "監視ログ"

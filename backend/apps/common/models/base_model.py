@@ -74,6 +74,6 @@ class BaseModel(models.Model):
     class Meta:
         abstract = True
         indexes = [
-            models.Index(fields=["is_deleted"]),
-            models.Index(fields=["created_at"]),
+            models.Index(fields=["is_deleted"], name="%(class)s_is_deleted_idx"),
+            models.Index(fields=["created_at"], name="%(class)s_created_at_idx"),
         ]

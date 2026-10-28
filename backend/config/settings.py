@@ -97,6 +97,7 @@ INSTALLED_APPS = [
     "apps.users",
     "apps.accounts",
     "apps.audit",
+    "apps.simulator",
 ]
 
 MIDDLEWARE = [
